@@ -19,7 +19,7 @@
   <script>
 
   $(function() {
-    $.get('data-scatter.csv', function(csv) {     // EDIT to match your CSV data file name
+    $.get('student transit.csv', function(csv) {     // EDIT to match your CSV data file name
       Highcharts.chart('container', {
         chart: {
           type: 'scatter',
@@ -27,11 +27,11 @@
         },
 
         title: {
-          text: 'Highcharts scatter chart from CSV'  // EDIT to insert your chart title
+          text: 'efficient transit'  // EDIT to insert your chart title
         },
 
         subtitle: {
-          text: 'View <a href="data-scatter.csv"> source data</a>', // EDIT link and text
+          text: 'View <a href="student transit.csv"> source data</a>', // EDIT link and text
           useHTML: true
         },
 
@@ -52,20 +52,20 @@
 
         xAxis: {
           title: {
-            text: 'Insert x-axis label'  // EDIT to insert horizontal x-axis label
+            text: 'how much do you spend in transportation daily'  // EDIT to insert horizontal x-axis label
           }
         },
 
         yAxis: {
           title: {
-            text: 'Insert y-axis label'   // EDIT to insert vertical y-axis label
+            text: 'opitimal distance from home to college'   // EDIT to insert vertical y-axis label
           }
         },
 
         plotOptions: {
             scatter: {
                 marker: {
-                    radius: 5,
+                    radius: 7,
                     states: {
                         hover: {
                           enabled: true,
@@ -95,8 +95,8 @@
 
         credits: {
           enabled: true,
-          text: 'View Highcharts.com template by DataVizForAll.org',
-          href: 'https://www.datavizforall.org/highcharts'
+          text: 'karz scatter',
+          href: 'https://github.com/karz2411'
         },
 
       });
